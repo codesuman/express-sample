@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-const {getSample} = require('../controller/sample')
+const {getBook} = require('../controller/book')
 
-router.route('/')
-    .get(getSample)
+router.route('/:id')
+    .get(getBook)
 
 module.exports = router;
 

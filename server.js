@@ -1,6 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
+const connectDB = require('./config/db');
 
 // load env vars
 dotenv.config({path: './config/config.env'});
@@ -17,7 +18,7 @@ app.use(express.json())
 app.use(cors())
 
 // Routes
-app.use('/api/v1/sample', require('./routes/sample'));
+app.use('/api/v1/books', require('./routes/book'));
 
 const PORT = process.env.PORT || 5000;
 
