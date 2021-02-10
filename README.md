@@ -12,3 +12,5 @@ PORT=5000
 
 SAVE_TO_CSV=false
 SAVE_TO_JSON=false
+
+MONGO_URI=mongodb://localhost:27017/my_db
